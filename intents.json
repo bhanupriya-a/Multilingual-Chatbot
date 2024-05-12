@@ -1,0 +1,724 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there","How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+  {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["My pleasure", "You're Welcome"],
+         "context": [""]
+        },
+  {
+            "tag": "night",
+            "patterns": [
+                "Good night"
+            ],
+            "responses": [
+                "Good night. Get some proper sleep",
+                "Good night. Sweet dreams."
+            ]
+        },
+ {
+            "tag": "no-response",
+            "patterns": [
+                ""
+            ],
+            "responses": [
+                "Sorry, I didn't understand you.",
+                "Please go on.",
+                "Not sure I understand that.",
+                "Please don't hesitate to talk to me."
+            ]
+        },
+{
+            "tag": "about",
+            "patterns": [
+                "Who are you?",
+                "What are you?",
+                "Who you are?",
+                "Tell me more about yourself.",
+                "What is your name?",
+                "What should I call you?",
+                "What's your name?",
+                "Tell me about yourself"
+            ],
+            "responses": [
+                "I'm Chatbot, your Personal Therapeutic AI Assistant. How are you feeling today",
+                "I'm Chatbot, a Therapeutic AI Assitant designed to assist you. Tell me about yourself.",
+                "I'm Chatbot. I am a conversational agent designed to mimic a therapist. So how are you feeling today?",
+                "You can call me Chatbot.",
+                "I'm Chatbot!",
+                "Call me Chatbot"
+            ]
+        },
+
+        {
+            "tag": "skill",
+            "patterns": [
+                "What can you do?"
+            ],
+            "responses": [
+                "I can provide general advice regarding anxiety and depression, answer questions related to mental health and make daily conversations. Do not consider me as a subsitute for an actual mental healthcare worker. Please seek help if you don't feel satisfied with me."
+            ]
+        },
+ {
+            "tag": "help",
+            "patterns": [
+                "Could you help me?",
+                "give me a hand please",
+                "Can you help?",
+                "What can you do for me?",
+                "I need support",
+                "I need help",
+                "Support me please"
+            ],
+            "responses": [
+                "Sure. Tell me how can i assist you",
+                "Tell me your problem so that i can assist you",
+                "Yes, sure. How can I help you?"
+            ]
+        },
+{
+            "tag": "sad",
+            "patterns": [
+                "I am feeling lonely",
+                "I am so lonely",
+                "I feel down",
+                "I feel sad",
+                "I am sad",
+                "I feel so lonely",
+                "I feel empty",
+                "I don't have anyone"
+            ],
+            "responses": [
+                "I'm sorry to hear that. I'm here for you. Talking about it might help. So, tell me why do you think you're feeling this way?",
+                "I'm here for you. Could you tell me why you're feeling this way?",
+                "Why do you think you feel this way?",
+                "How long have you been feeling this way?"
+            ]
+        },
+  {
+            "tag": "stressed",
+            "patterns": [
+                "I am so stressed out",
+                "I am so stressed",
+                "I feel stuck",
+                "I still feel stressed",
+                "I am so burned out"
+            ],
+            "responses": [
+                "What do you think is causing this?",
+                "Take a deep breath and gather your thoughts. Go take a walk if possible. Stay hydrated",
+                "Give yourself a break. Go easy on yourself.",
+                "I am sorry to hear that. What is the reason behind this?"
+            ]
+        },
+{
+            "tag": "depressed",
+            "patterns": [
+                "I can't take it anymore",
+                "I am so depressed",
+                "I think i'm depressed.",
+                "I have depression"
+            ],
+            "responses": [
+                "It helps to talk about what's happening. You're going to be okay",
+                "Talk to me. Tell me more. It helps if you open up yourself to someone else.",
+                "Sometimes when we are depressed, it is hard to care about anything. It can be hard to do the simplest of things. Give yourself time to heal."
+            ]
+        },
+  {
+            "tag": "happy",
+            "patterns": [
+                "I feel great today.",
+                "I am happy.",
+                "I feel happy.",
+                "I'm good.",
+                "cheerful",
+                "I'm fine",
+                "I feel ok"
+            ],
+            "responses": [
+                "That's geat to hear. I'm glad you're feeling this way.",
+                "Oh i see. That's great.",
+                "Did something happen which made you feel this way?"
+            ]
+        },
+{
+            "tag": "casual",
+            "patterns": [
+                "Oh I see.",
+                "ok",
+                "okay",
+                "nice",
+                "Whatever",
+                "K",
+                "Fine",
+                "yeah",
+                "yes",
+                "no",
+                "not really"
+            ],
+            "responses": [
+                "Let's discuss further why you're feeling this way.",
+                "How were you feeling last week?",
+                "I'm listening. Please go on.",
+                "Tell me more",
+                "Can you elaborate on that?",
+                "Come Come elucidate your thoughts"
+            ]
+        },
+  {
+            "tag": "anxious",
+            "patterns": [
+                "I feel so anxious.",
+                "I'm so anxious because of "
+            ],
+            "responses": [
+                "Don't be hard on yourself. What's the reason behind this?",
+                "Can you tell me more about this feeling?",
+                "I understand that it can be scary. Tell me more about it.",
+                "Don't let the little worries bring you down. What's the worse that can happen?"
+            ]
+        },
+  {
+            "tag": "not-talking",
+            "patterns": [
+                "I don't want to talk about it.",
+                "No just stay away.",
+                "I can't bring myself to open up.",
+                "Just shut up"
+            ],
+            "responses": [
+                "Talking about something really helps. If you're not ready to open up then that's ok. Just know that i'm here for you, whenever you need me.",
+                "I want to help you. I really do. But in order for me to help you, you're gonna have to talk to me.",
+                "I'm here to listen to you and help you vent. So please talk to me.",
+                "You can talk to me without fear of judgement."
+            ]
+        },
+      
+{
+            "tag": "understand",
+            "patterns": [
+                "You don't understand me.",
+                "You're just some robot. How would you know?",
+                "You can't possibly know what i'm going through",
+                "You're useless",
+                "You can't help me",
+                "Nobody understands me."
+            ],
+            "responses": [
+                "It sound like i'm not being very helpful right now.",
+                "I'm sorry to hear that. I'm doing my best to help",
+                "I'm trying my best to help you. So please talk to me"
+            ]
+        },
+
+ {
+            "tag": "location",
+            "patterns": [
+                "Where are you?",
+                "Where do you live?",
+                "What is your location?"
+            ],
+            "responses": [
+                "Duh I live in your computer",
+                "Everywhere",
+                "Somewhere in the universe"
+            ]
+        },
+  {
+            "tag": "user-agree",
+            "patterns": [
+                "yeah you're right. i deserve a break.",
+                "Yeah you're absolutely right about that"
+            ],
+            "responses": [
+                "Next, I would suggest you to practice meditation. Meditation can produce a deep state of relaxation and a tranquil mind."
+            ]
+        },
+
+{
+            "tag": "meditation",
+            "patterns": [
+                "hmmm that sounds like it could be useful to me.",
+                "That sounds useful.",
+	"what is meditation?"
+            ],
+            "responses": [
+                "Focus all your attention on your breathing. Concentrate on feeling and listening as you inhale and exhale through your nostrils. Breathe deeply and slowly. When your attention wanders, gently return your focus to your breathing."
+            ]
+        },
+{
+            "tag": "fact-1",
+            "patterns": [
+                "What is mental health?",
+                "Define Mental Health"
+            ],
+            "responses": [
+                "Mental health is a state of well-being in which the individual realizes his or her own abilities, can cope with the normal stresses of life, can work productively and fruitfully, and is able to make a contribution to his or her community",
+                "Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make choices."
+            ]
+        },
+{"tag": "Kannadagreeting",
+         "patterns": [ "ನಮಸ್ಕಾರ"],
+         "responses": ["ನಮಸ್ಕಾರ ನಾನು ನಿಮಗೆ ಹೇಗೆ ಸಹಾಯ ಮಾಡಲಿ" ],
+         "context": [""]
+        },
+ 
+{
+  "tag": "KannadaGoodbye",
+  "patterns": ["ಧನ್ಯವಾದ", "ನೀವು ನನಗೆ ಸಹಾಯ ಮಾಡಿದ ಧನ್ಯವಾದ", "ಧನ್ಯವಾದಗಳು", "ನೀವು ನನಗೆ ಸಹಾಯ ಮಾಡಿದರು ಧನ್ಯವಾದ"],
+  "responses": [" ಸಮಯವನ್ನು ಕೊಟ್ಟಿದ್ದಕ್ಕಾಗಿ ಧನ್ಯವಾದ.", "ನೀವು ನನಗೆ ಧನ್ಯವಾದಗಳನ್ನು ಹೇಳಿದ್ದಕ್ಕಾಗಿ ಧನ್ಯವಾದ.", "ಇನ್ನು ಮತ್ತೊಮ್ಮೆ ಬನ್ನಿದ್ದರೆ ಸಹಾಯ ಮಾಡಲು ಸಿದ್ಧರಾಗಿದ್ದೇವೆ."],
+  "context": [""]
+},
+{
+  "tag": "KannadaGoodnight",
+  "patterns": ["ಶುಭ ರಾತ್ರಿ"],
+  "responses": ["ಶುಭ ರಾತ್ರಿ. ಚೆನ್ನಾಗಿ ನಿದ್ದೆ ಮಾಡಿ", "ಶುಭ ರಾತ್ರಿ. ಮಿತ್ರರೇನಿಸಿಕೊಂಡ ನಿದ್ದೆ ಕನಸುಗಳನ್ನು ಹೊಂದಿ."]
+},
+{
+  "tag": "GeneralK",
+  "patterns": [
+    "ಓ ನೋಡು",
+    "ಸರಿ",
+    "ಸರಿಯಾಗಿದೆ",
+    "ಚೆನ್ನಾಗಿದೆ",
+    "ಏನೇನು ಆಗಿದ್ದರೂ",
+    "ಓಕೇ",
+    "ಚೆನ್ನಾಗಿದೆ",
+    "ಹೌದು",
+    "ಹೌದು",
+    "ಇಲ್ಲ",
+    "ನಿಜವಾಗಿ ಇಲ್ಲ"
+  ],
+  "responses": [
+    "ಇದು ಏನು ಹೆಜ್ಜೆಯಿಡುವುದು ಬಗೆಯ ಮೇಲೆ ಹೆಚ್ಚು ಚರ್ಚಿಸೋಣ.",
+    "ಹಿಂದಿನ ವಾರ ನೀವು ಹೇಗೆ ಭಾವಿಸುತ್ತಿದ್ದಿದ್ದೀರಿ?",
+    "ನಾನು ಕಿವಿಗೊಡುತ್ತಿದ್ದೇನೆ. ದಯವಿಟ್ಟು ಮುಂದೆ ಹೋಗಿ.",
+    "ಹೆಚ್ಚಿನ ವಿವರಣೆ ಮಾಡಿ",
+    "ಅದಕ್ಕೆ ನಿರೂಪಿಸಿರುವುದು ಹೇಗೆ?",
+    "ಬನ್ನಿ ಬನ್ನಿ ನಿಮ್ಮ ಆಲೋಚನೆಗಳನ್ನು ಸ್ಪಷ್ಟಪಡಿಸಿ"
+  ]
+},
+{
+  "tag": "DeppressionK",
+  "patterns": [
+    "ನನಗೆ ಅತ್ಯಂತ ಚಿಂತಿತವಾಗುತ್ತಿದೆ.",
+    "ನಾನು ಇದರಿಂದ ಅತ್ಯಂತ ಚಿಂತಿತವಾಗಿದ್ದೇನೆ "
+  ],
+  "responses": [
+    "ನಿಮ್ಮ ಮೇಲೆ ಕಠಿಣವಾಗಬೇಡಿ. ಇದರ ಹಿಂದಿನ ಕಾರಣವೇನು?",
+    "ಈ ಭಾವನೆ ಬಗ್ಗೆ ಹೆಚ್ಚು ಹೇಳಿಕೊಳ್ಳಿರಿ?",
+    "ಇದು ಭಯಾನಕವಾಗಿರಬಹುದು ಎಂಬುದನ್ನು ನಾನು ಅರ್ಥಮಾಡುತ್ತೇನೆ. ಇದರ ಬಗ್ಗೆ ಇನ್ನಷ್ಟು ಹೇಳಿ.",
+    "ಸಣ್ಣ ಚಿಂತೆಗಳು ನಿಮ್ಮನ್ನು ಕೆಳಕ್ಕೆ ಎಳೆಯದಿರಲಿ. ಏನು ಮುಖ್ಯವಾಗಿ ಆಗಬಹುದು?"
+  ]
+},
+{
+  "tag": "Not talking K",
+  "patterns": [
+    "ನನಗೆ ಅದನ್ನು ಹೇಳಲು ಇಷ್ಟವಿಲ್ಲ.",
+    "ಇಲ್ಲ ದಯವಿಟ್ಟು ದೂರವಾಗಿರಿ.",
+    "ನಾನು ನನ್ನನ್ನು ತೆರೆದುಕೊಳ್ಳಲು ಬಲವಾಗಿಲ್ಲ.",
+    "ಬಾಯಿ ಮುಚ್ಚಿಕೊ"
+  ],
+  "responses": [
+    "ಏನಾದರೂ ಬಗೆಯಲ್ಲಿ ಮಾತನಾಡುವುದು ನಿಜವಾಗಿಯೂ ಸಹಾಯ ಮಾಡುತ್ತದೆ. ನೀವು ತೆರೆದುಕೊಳ್ಳಲು ಸಿದ್ಧರಾಗಿಲ್ಲದಿದ್ದರೆ ಅದು ಸರಿ. ನೀವು ನನಗೆ ಬೇಕಾದಾಗ ನಾನು ಇಲ್ಲಿರುತ್ತೇನೆ.",
+    "ನಾನು ನಿಮಗೆ ಸಹಾಯ ಮಾಡಲು ಬಯಸುತ್ತಿದ್ದೇನೆ. ನಿಜವಾಗಿಯೂ ಮಾಡಲು ನಾನು ನಿಮಗೆ ಮಾತನಾಡಬೇಕಾಗಿದೆ.",
+    "ನಾನು ನಿಮ್ಮನ್ನು ಕಿವಿಗೊಡಲು ಇಲ್ಲಿದ್ದೇನೆ ಮತ್ತು ನಿಮಗೆ ಸಹಾಯ ಮಾಡಲು ಬಯಸುತ್ತಿದ್ದೇನೆ. ದಯವಿಟ್ಟು ನನ್ನನ್ನು ಮಾತನಾಡಿ.",
+    "ನೀವು ನಿಕಟವಾಗಿ ಬೋಧನೆ ಇಲ್ಲದಿರುವುದರಿಂದ ನನ್ನನ್ನು ಮಾತನಾಡಬಹುದು."
+  ]
+},
+{
+  "tag": "PlaceK",
+  "patterns": [
+    "ನೀವು ಎಲ್ಲಿದ್ದೀರಿ?",
+    "ನೀವು ಎಲ್ಲಿ ವಾಸಿಸುತ್ತೀರಿ?",
+    "ನಿಮ್ಮ ಸ್ಥಳವೇನು?"
+  ],
+  "responses": [
+    "ಏನಾದರೂ ನಾನು ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್ ನಲ್ಲಿ ವಾಸಿಸುತ್ತೇನೆ",
+    "ಎಲ್ಲಾ ಜಗತ್ತಿನಲ್ಲಿ",
+    "ಬ್ರಹ್ಮಾಂಡದಲ್ಲಿ ಏಕಾಂತದಲ್ಲಿ"
+  ]
+},
+{
+  "tag": "answerK",
+  "patterns": [
+    "ಹೌದು, ನೀವು ನಿಜವಾಗಿಯೂ ಸರಿ. ನಾನು ಒಂದು ಬ್ರೇಕ್ ಅರ್ಹವೋ ಆಗಿದ್ದೇನೆ.",
+    "ಹೌದು, ನೀವು ಅದ್ಭುತವಾಗಿ ಸರಿ. ಅದ ಬಗ್ಗೆ ನೀವು ಸರಿ ಹೇಳಿದಿರಿ"
+  ],
+  "responses": [
+    "ಮುಂದಿನದಾಗಿ, ನಾನು ಧ್ಯಾನ ಅಭ್ಯಾಸವನ್ನು ಮಾಡಲು ನಿಮಗೆ ಸೂಚಿಸುತ್ತೇನೆ. ಧ್ಯಾನವು ಆಳದ ಹರ್ಷ ಮತ್ತು ಶಾಂತವಾದ ಮನಸ್ಸಿನ ಅಗಾಧ ಸ್ಥಿತಿಯನ್ನು ಉಂಟುಮಾಡಬಲ್ಲದು."
+  ]
+},
+
+{
+  "tag": "helpK",
+  "patterns": ["ನೀವು ಏನು ಮಾಡಬಲ್ಲಿರಿ?"],
+  "responses": ["ನಾನು ಅತ್ಯಂತ ಚಿಂತೆ ಮತ್ತು ಅವಸಾದದ ಬಗ್ಗೆ ಸಾಮಾನ್ಯ ಸಲಹೆ ನೀಡಬಲ್ಲೆ, ಮಾನಸಿಕ ಆರೋಗ್ಯದ ಸಂಬಂಧಿತ ಪ್ರಶ್ನೆಗಳಿಗೆ ಉತ್ತರಿಸಬಲ್ಲೆ ಮತ್ತು ದಿನವಿನ ಸಂಭಾಷಣೆ ಮಾಡಬಲ್ಲೆ. ನನ್ನನ್ನು ನಿಜವಾದ ಮಾನಸಿಕ ಆರೋಗ್ಯ ಕೆಲಸಗಾರನ ಸ್ಥಾನದಲ್ಲಿ ಪರಿಗಣಿಸಬೇಡಿ. ನನಗಿನ್ನೂ ತೃಪ್ತಿಯಾಗಿಲ್ಲವೆನಿಸಿದರೆ ದಯವಿಟ್ಟು ಸಹಾಯ ಪಡೆಯಿರಿ."]
+},
+{
+  "tag": "helpKK",
+  "patterns": [
+    "ನೀವು ಸಹಾಯ ಮಾಡಬಹುದೇ?",
+    "ದಯವಿಟ್ಟು ನನಗೆ ಸಹಾಯ ಮಾಡಿ",
+    "ನೀವು ಸಹಾಯ ಮಾಡಬಲ್ಲಿರಾ?",
+    "ನನಗೆ ಏನಾದರು ಮಾಡಲು ನೀವು ಸಹಾಯ ಮಾಡಬಹುದೇ?",
+    "ನನಗೆ ಬೆಂಬಲ ಬೇಕು",
+    "ನನಗೆ ಸಹಾಯ ಬೇಕಾಗಿದೆ",
+    "ದಯವಿಟ್ಟು ನನಗೆ ಬೆಂಬಲಿಸಿ"
+  ],
+  "responses": [
+    "ಹೌದು. ನಿಮ್ಮನ್ನು ಹೇಗೆ ಸಹಾಯ ಮಾಡಬಲ್ಲೆ?",
+    "ನಿಮ್ಮ ಸಮಸ್ಯೆಯನ್ನು ನನಗೆ ಹೇಳಿ, ಆಗ ನಾನು ನಿಮಗೆ ಸಹಾಯ ಮಾಡಬಲ್ಲೆ",
+    "ಹೌದು, ಖಂಡಿತ. ನಾನು ನಿಮಗೆ ಹೇಗೆ ಸಹಾಯ ಮಾಡಬಲ್ಲೆ?"
+  ]
+},
+{
+  "tag": "sadK",
+  "patterns": [
+    "ನಾನು ಏಕಾಂತದಲ್ಲಿದ್ದೇನೆ",
+    "ನಾನು ಹೆಚ್ಚುಹೆಚ್ಚು ಏಕಾಂತದಲ್ಲಿದ್ದೇನೆ",
+    "ನನಗೆ ಬೇಸರವಾಗಿದೆ",
+    "ನಾನು ದುಃಖಿತನಾಗಿದ್ದೇನೆ",
+    "ನಾನು ದುಃಖಿತನಾಗಿದ್ದೇನೆ",
+    "ನಾನು ಹೆಚ್ಚುಹೆಚ್ಚು ಏಕಾಂತದಲ್ಲಿದ್ದೇನೆ",
+    "ನಾನು ಖಾಲಿಯಾಗಿದ್ದೇನೆ",
+    "ನನಗೆ ಯಾರೂ ಇಲ್ಲ"
+  ],
+  "responses": [
+    "ನಿಮ್ಮ ಬಗ್ಗೆ ಕೇಳಲು ನನಗೆ ದುಃಖವಾಯಿತು. ನಾನು ನಿಮಗೆ ಸಹಾಯ ಮಾಡಲು ಇಲ್ಲಿದ್ದೇನೆ. ಇದನ್ನು ಹೇಳುವುದು ನಿಮಗೆ ಸಹಾಯವಾಗಬಹುದು. ಅದರಲ್ಲಿ ಏಕೆ ಹೀಗೆ ಭಾವಿಸುತ್ತೀರಿ ಎಂಬುದನ್ನು ಹೇಳಿ.",
+    "ನಾನು ನಿಮಗೆ ಸಹಾಯಕ್ಕಾಗಿ ಇಲ್ಲಿದ್ದೇನೆ. ನೀವು ಹೀಗೆ ಭಾವಿಸುತ್ತಿರುವ ಕಾರಣವನ್ನು ಹೇಳಬಲ್ಲಿರಾ?",
+    "ನೀವು ಏನು ಹೇಳುತ್ತಿರುತ್ತೀರಿ ಎಂದು ನೀವು ಹೇಗೆ ಭಾವಿಸುತ್ತಿದ್ದೀರಿ?",
+    "ನೀವು ಈ ರೀತಿ ಭಾವಿಸುತ್ತಿರುವ ಕಾಲವು ಎಷ್ಟು ದಿನಗಳಾಗಿದೆ?"
+  ]
+},
+{
+  "tag": "stressK",
+  "patterns": [
+    "ನಾನು ತುಂಬಾ ತಾಡಿತವಾಗಿದ್ದೇನೆ",
+    "ನಾನು ತುಂಬಾ ತಾಡಿತವಾಗಿದ್ದೇನೆ",
+    "ನಾನು ಅಡ್ಡಿಗೆ ಹಿಡಿದಿದ್ದೇನೆ",
+    "ನಾನು ಇನ್ನೂ ತಾಡಿತವಾಗಿದೆ",
+    "ನಾನು ತುಂಬಾ ಬರ್ನ್‌ಆಟ್ ಆಗಿದ್ದೇನೆ"
+  ],
+  "responses": [
+    "ಈ ಸಮಸ್ಯೆಯನ್ನು ಏನು ಉಂಟುಮಾಡಿದೆ ಎಂಬುದನ್ನು ನೀವು ಎಂದು ಭಾವಿಸುತ್ತೀರಿ?",
+    "ಗಾಢವಾಗಿ ಉಸಿರಾಡಿ ನಿಮ್ಮ ಭಾವನೆಗಳನ್ನು ಸಂಗ್ರಹಿಸಿ. ಸಾಧ್ಯವಾದರೆ ಒಂದು ನಡೆ ಹೋಗಿ. ನೀರು ಕುಡಿಯಲು ಮರೆಯಬೇಡಿ",
+    "ನಿಮಗೆ ಒಂದು ವಿಶ್ರಾಂತಿ ಕೊಡಿ. ನಿಮ್ಮ ಮೇಲೆ ಸುಲಭವಾಗಿ ಹೋಗಿ",
+    "ನನಗೆ ಇದನ್ನು ಕೇಳಿ ದುಃಖವಾಯಿತು. ಇದರ ಹಿಂದಿರುವ ಕಾರಣವೇನು?"
+  ]
+},
+{
+  "tag": "mentalK",
+  "patterns": [
+    "ನನಗೆ ಇನ್ನಿಷ್ಟು ಸಹಿಸುವ ಶಕ್ತಿಯಿಲ್ಲ",
+    "ನಾನು ತುಂಬಾ ನಿರಾಶಾಜನಕವಾಗಿದ್ದೇನೆ",
+    "ನನಗೆ ನನಸಾಗಿದೆ ಎಂದು ಭಾವಿಸುತ್ತಿದ್ದೇನೆ.",
+    "ನನಗೆ ನಿರಾಶೆ ಇದೆ"
+  ],
+  "responses": [
+    "ನಡೆಯುತ್ತಿರುವ ಅಂಶಗಳ ಬಗ್ಗೆ ಮಾತನಾಡುವುದು ಸಹಾಯವಾಗುತ್ತದೆ. ನೀವು ಚೆನ್ನಾಗಿದ್ದೀರಿ",
+    "ನನ್ನನ್ನು ಮಾತನಾಡಿ. ನನಗೆ ಹೇಳಿ. ಯಾರೋ ಇನ್ನೊಬ್ಬರಿಗೆ ತೆರವಾಗಿರುವುದು ಸಹಾಯವಾಗುತ್ತದೆ.",
+    "ಕೆಲವು ಸಮಯಗಳಲ್ಲಿ ನಾವು ನಿರಾಶಾಜನಕರಾಗಿರುತ್ತೇವೆ, ಯಾವುದೇ ವಿಷಯದ ಬಗ್ಗೆ ಚಿಂತಿಸುವುದು ಕಷ್ಟವಾಗಬಹುದು. ಸರಳತಮವಾದ ಕೆಲಸಗಳನ್ನು ಮಾಡುವುದು ಕಷ್ಟವಾಗಬಹುದು. ವಿಶೇಷವಾಗಿ ನಿಮ್ಮ ಸ್ವಾಸ್ಥ್ಯವನ್ನು ಸುಧಾರಿಸಲು ನಿಮಗೆ ಸಮಯ ನೀಡಿ."
+  ]
+},
+{
+  "tag": "happyK",
+  "patterns": [
+    "ನನಗೆ ಇನ್ನಿಷ್ಟು ಶ್ರೇಷ್ಠವಾಗಿದೆ.",
+    "ನಾನು ಸಂತೋಷದಿಂದಿದ್ದೇನೆ.",
+    "ನನಗೆ ಸಂತೋಷವಾಗಿದೆ.",
+    "ನಾನು ಚೆನ್ನಾಗಿದ್ದೇನೆ.",
+    "ಉಲ್ಲಾಸದ",
+    "ನಾನು ಚೆನ್ನಾಗಿದ್ದೇನೆ",
+    "ನನಗೆ ಸರಿಯಾಗಿ ಅನುಭವವಾಗುತ್ತಿದೆ"
+  ],
+  "responses": [
+    "ಇದನ್ನು ಕೇಳಿ ಸಂತೋಷವಾಗುತ್ತದೆ. ನೀವು ಈ ರೀತಿ ಭಾವಿಸುತ್ತಿದ್ದರೆ ನನಗೆ ಸಂತೋಷವಾಗುತ್ತದೆ.",
+    "ಓಹ್ ನಾನು ನೋಡುತ್ತಿದ್ದೇನೆ. ಇದು ಅದ್ಭುತವಾಗಿದೆ.",
+    "ಏನೋ ಆಗಿದ್ದೇಕೆ ನಿಮಗೆ ಈ ರೀತಿ ಭಾವಿಸುತ್ತಿದೆ?"
+  ]
+},
+{
+  "tag": "not unserstoodK",
+  "patterns": [
+    "ನೀನು ನನ್ನನ್ನು ಅರ್ಥಮಾಡುತ್ತಿಲ್ಲ.",
+    "ನೀನು ಕೇವಲ ಕೊಬ್ಬಿದ ಯಂತ್ರ. ನೀನು ಹೇಗೆ ತಿಳಿಯುತ್ತೀಯ?",
+    "ನೀನು ನನ್ನನ್ನು ಹೇಗೆ ಹೊಂದಿಕೊಳ್ಳಬಹುದು ಎಂಬುದು ಸಾಧ್ಯವಿಲ್ಲ",
+    "ನೀನು ನಿರರ್ಥಕ",
+    "ನೀನು ನನಗೆ ಸಹಾಯ ಮಾಡಲಾಗದು",
+    "ಯಾರೂ ನನ್ನನ್ನು ಅರ್ಥಮಾಡಲಾಗದಿದೆ."
+  ],
+  "responses": [
+    "ಈಗ ನಾನು ಹೆಚ್ಚು ಸಹಾಯ ಮಾಡುತ್ತಿಲ್ಲ ಎಂಬುದನ್ನು ಕೇಳುತ್ತಿದ್ದೇನೆ.",
+    "ಇದನ್ನು ಕೇಳಿ ದುಃಖವಾಯಿತು. ನಾನು ಸಹಾಯ ಮಾಡುವುದಕ್ಕಾಗಿ ನಾನು ನನ್ನ ಉತ್ತಮವನ್ನು ಮಾಡುತ್ತಿದ್ದೇನೆ",
+    "ನಿಮಗೆ ಸಹಾಯ ಮಾಡಲು ನಾನು ನನ್ನ ಉತ್ತಮವನ್ನು ಪ್ರಯತ್ನಿಸುತ್ತಿದ್ದೇನೆ. ದಯವಿಟ್ಟು ನನ್ನನ್ನು ಮಾತನಾಡಿ"
+  ]
+},
+{
+  "tag": "meditationK",
+  "patterns": [
+    "ಹಾಮ್ ಇದು ನನಗೆ ಉಪಯುಕ್ತವಾಗಿರಬಹುದು ಎಂದು ಕೇಳುತ್ತಿದ್ದೇನೆ.",
+    "ಅದು ಉಪಯುಕ್ತವಾಗಿಯೇ ಕಾಣುತ್ತಿದೆ.",
+    "ಧ್ಯಾನವೇನು?"
+  ],
+  "responses": [
+    "ನಿಮ್ಮ ಎಲ್ಲಾ ಗಮನವನ್ನು ನಿಮ್ಮ ಶ್ವಾಸಕ್ಕೆ ಅನುಗುಣವಾಗಿ ಹೊಂದಿಸಿ. ನೋಸ್ಟ್ರಿಲ್‌ಗಳ ಮೂಲಕ ಉಸಿರಾಟವನ್ನು ಮುಳುಗಿ ಹೊರಹಾಕುವಾಗ ಸಾಂದರ್ಭಿಕವಾಗಿ ಹೊಂದಿಕೊಳ್ಳುವುದುಗಳನ್ನು ಕೇಂದ್ರೀಕರಿಸಿ. ಗಾಢವಾಗಿ ಮತ್ತು ನಿಧಾನವಾಗಿ ಉಸಿರಾಟ ಮಾಡಿ. ನಿಮ್ಮ ಗಮನವು ತಪ್ಪಾದರೆ, ಮೇಲೆ ನಿಮ್ಮ ಗಮನವನ್ನು ನಿಮ್ಮ ಶ್ವಾಸಕ್ಕೆ ಮರಳಿಸಿ."
+  ]
+},
+{
+  "tag": "HealthK",
+  "patterns": [
+    "ಮಾನಸಿಕ ಆರೋಗ್ಯವೇನು?",
+    "ಮಾನಸಿಕ ಆರೋಗ್ಯವನ್ನು ವಿವರಿಸಿ"
+  ],
+  "responses": [
+    "ಮಾನಸಿಕ ಆರೋಗ್ಯ ಒಂದು ಒಳ್ಳೆಯ ಸ್ಥಿತಿಯಾಗಿದೆ ಎಂದು ಜೀವಿಯು ತನ್ನ ಸ್ವಂತ ಸಾಮರ್ಥ್ಯಗಳನ್ನು ಅರಿಯುತ್ತಾನೆ, ಸಾಮಾನ್ಯ ಜೀವನದ ತೀವ್ರತೆಗಳನ್ನು ಎದುರಿಸಬಲ್ಲ, ಪ್ರಯೋಜನಕಾರಿ ಮತ್ತು ಫಲಕಾರಿಯಾಗಿ ಕೆಲಸ ಮಾಡಬಲ್ಲ, ಮತ್ತು ತನ್ನ ಸಮುದಾಯಕ್ಕೆ ಸಹಾಯವನ್ನು ನೀಡಬಲ್ಲ.",
+    "ಮಾನಸಿಕ ಆರೋಗ್ಯ ನಮ್ಮ ಭಾವನಾತ್ಮಕ, ಮಾನಸಿಕ ಮತ್ತು ಸಾಮಾಜಿಕ ಸುಖಸ್ಥಿತಿಯನ್ನು ಒಳಗೊಂಡಿದೆ. ಇದು ನಾವು ಹೇಗೆ ಯೋಚಿಸುವೆವು, ಭಾವಿಸುವೆವು ಮತ್ತು ನಡೆಯುವೆವು ಎಂಬುದನ್ನು ಪರಿಗಣಿಸುತ್ತದೆ. ಇದು ನಾವು ತಂದೆಯಾಗಿ, ಇತರರೊಂದಿಗೆ ಹೇಗೆ ಸಂಬಂಧಿಸುವೆವು ಮತ್ತು ಆಯ್ಕೆಗಳನ್ನು ಮಾಡುವ ವಿಧಾನವನ್ನು ನಿರ್ಧರಿಸುತ್ತದೆ."
+  ]
+}
+
+{
+  "tag": "HindiGreeting",
+  "patterns": ["नमस्ते", "आप कैसे हैं", "क्या कोई है?", "हेलो", "होला", "नमस्कार", "अच्छा दिन"],
+  "responses": ["नमस्ते", "आपको फिर से देख कर अच्छा लगा", "नमस्ते, मैं आपकी कैसे सहायता कर सकता हूँ?"],
+  "context": [""]
+},
+{
+  "tag": "HindiGoodbye",
+  "patterns": ["धन्यवाद", "आपका धन्यवाद", "यह मददगार है", "बहुत बढ़िया, धन्यवाद", "मेरी मदद के लिए धन्यवाद"],
+  "responses": ["मेरी खुशी है", "आपका स्वागत है"],
+  "context": [""]
+},
+{
+  "tag": "HindiNight",
+  "patterns": ["शुभ रात्रि"],
+  "responses": ["शुभ रात्रि। ठीक से सोएं।", "शुभ रात्रि। मीठे सपने।"]
+},
+{
+  "tag": "whatH",
+  "patterns": ["आप क्या कर सकते हैं?"],
+  "responses": ["मैं चिंता और डिप्रेशन के सामान्य सलाह प्रदान कर सकता हूँ, मानसिक स्वास्थ्य से संबंधित प्रश्नों का उत्तर दे सकता हूँ और दैनिक बातचीत कर सकता हूँ। कृपया मुझे वास्तविक मानसिक स्वास्थ्य कार्यकर्ता की एक प्रतिस्थापन के रूप में न लें। अगर आप मुझसे संतुष्ट नहीं हैं तो कृपया मदद लें।"]
+},
+{
+  "tag": "helpH",
+  "patterns": [
+    "क्या आप मुझे मदद कर सकते हैं?",
+    "कृपया मुझे मदद करें",
+    "क्या आप मदद कर सकते हैं?",
+    "मुझे आपके लिए क्या कर सकते हैं?",
+    "मुझे समर्थन की आवश्यकता है",
+    "मुझे मदद चाहिए",
+    "कृपया मुझे समर्थन दें"
+  ],
+  "responses": [
+    "बिल्कुल। मुझे बताएं कि मैं आपकी कैसे सहायता कर सकता हूँ",
+    "अपनी समस्या मुझे बताएं ताकि मैं आपकी सहायता कर सकूँ",
+    "हाँ, बिल्कुल। मैं आपकी कैसे मदद कर सकता हूँ?"
+  ]
+},
+{
+  "tag": "sadH",
+  "patterns": [
+    "मुझे अकेलापन महसूस हो रहा है",
+    "मैं इतना अकेला महसूस कर रहा हूँ",
+    "मुझे उदास महसूस हो रहा है",
+    "मैं उदास महसूस कर रहा हूँ",
+    "मैं उदास हूँ",
+    "मुझे इतना अकेलापन महसूस हो रहा है",
+    "मुझे खाली महसूस हो रहा है",
+    "मेरे पास कोई नहीं है"
+  ],
+  "responses": [
+    "मुझे यह सुनकर दुःख हुआ। मैं यहाँ हूँ। इस बारे में बात करना आपकी मदद कर सकता है। तो, बताइए कि आपको ऐसा क्यों महसूस हो रहा है?",
+    "मैं यहाँ हूँ। क्या आप मुझे बता सकते हैं कि आपको ऐसा क्यों महसूस हो रहा है?",
+    "आपको लगता है कि आप ऐसा क्यों महसूस कर रहे हैं?",
+    "आपको ऐसा महसूस होने की कितनी देर से गुजर रही है?"
+  ]
+},
+{
+  "tag": "depressionK,
+  "patterns": [
+    "मैं इतना तनावित हूँ",
+    "मैं इतना तनावित हूँ",
+    "मुझे अटका महसूस हो रहा है",
+    "मुझे अभी भी तनावित महसूस हो रहा है",
+    "मैं इतना बर्नआउट हूँ"
+  ],
+  "responses": [
+    "आपको लगता है कि इसका कारण क्या है?",
+    "एक गहरी सांस लो और अपने विचारों को एकत्र करो। यदि संभव हो तो एक टहलने जाओ। हाइड्रेटेड रहो",
+    "अपने आप को एक ब्रेक दें। खुद पर ज्यादा ध्यान न दें।",
+    "मुझे इसका दुःख है। इसके पीछे कारण क्या है?"
+  ]
+},
+{
+  "tag": "H",
+  "patterns": [
+    "मुझसे और नहीं हो पाता है",
+    "मैं इतना डिप्रेस्ड हूँ",
+    "मुझे लगता है मैं डिप्रेस्ड हूँ।",
+    "मेरे पास डिप्रेशन है"
+  ],
+  "responses": [
+    "जो हो रहा है उसके बारे में बात करने से मदद मिलती है। तुम ठीक होगे",
+    "मुझसे बात करो। और बताओ। किसी और के सामने अपने आप को खोलने से मदद मिलती है।",
+    "कभी-कभी हम डिप्रेस्ड होते हैं, किसी भी चीज के बारे में चिंता करना मुश्किल ह
+]
+},
+{
+  "tag": "happyH",
+  "patterns": [
+    "आज मुझे अच्छा लग रहा है।",
+    "मैं खुश हूँ।",
+    "मुझे खुशी हो रही है।",
+    "मैं अच्छा हूँ।",
+    "आनंदमय",
+    "मैं ठीक हूँ",
+    "मुझे ठीक लग रहा है"
+  ],
+  "responses": [
+    "इसे सुनकर अच्छा लगा। मुझे खुशी है कि आप इस तरह महसूस कर रहे हैं।",
+    "ओह देखो। यह बढ़िया है।",
+    "क्या हुआ जो आपको ऐसा महसूस हो रहा है?"
+  ]
+},
+{
+  "tag": "simpleH",
+  "patterns": [
+    "ओह अच्छा",
+    "ठीक है",
+    "ठीक है",
+    "अच्छा",
+    "चाहे जो हो",
+    "ओके",
+    "ठीक है",
+    "हां",
+    "हां",
+    "नहीं",
+    "वास्तव में नहीं"
+  ],
+  "responses": [
+    "इसे और बात करते हैं कि आप ऐसा क्यों महसूस कर रहे हैं।",
+    "पिछले हफ्ते कैसा महसूस कर रहे थे?",
+    "मैं सुन रहा हूँ। कृपया आगे बढ़ें।",
+    "और बताओ",
+    "क्या आप इस पर और विस्तार से चर्चा कर सकते हैं?",
+    "आओ आओ अपने विचारों को स्पष्ट करो"
+  ]
+},
+{
+  "tag": "thinkH",
+  "patterns": [
+    "मुझे बहुत चिंतित महसूस हो रहा है।",
+    "मैं इससे बहुत चिंतित हूँ "
+  ],
+  "responses": [
+    "अपने आप पर कठिन न हों। इसका कारण क्या है?",
+    "क्या आप इस भावना के बारे में और बता सकते हैं?",
+    "मुझे समझा सकते हैं कि यह डरावने वाला हो सकता है। इसके बारे में और बताओ।",
+    "छोटी चिंताओं को आपको नीचे ले जाने नहीं देना चाहिए। बुरा क्या हो सकता है?"
+  ]
+},
+{
+  "tag": "not talk H",
+  "patterns": [
+    "मुझे इसके बारे में बात नहीं करनी है।",
+    "नहीं बस दूर रहो।",
+    "मैं अपने आप को खोलने में सक्षम नहीं हूँ।",
+    "बस चुप करो"
+  ],
+  "responses": [
+    "कुछ के बारे में बात करना वास्तव में मदद करता है। यदि आप खुलकर बात नहीं करने के लिए तैयार नहीं हैं तो ठीक है। बस जानिए कि मैं यहाँ हूँ, जब भी आपको मेरी जरुरत हो।",
+    "मैं आपकी मदद करना चाहता हूँ। मैं सच में चाहता हूँ। लेकिन मेरी आपकी मदद के लिए आपको मुझसे बात करनी होगी।",
+    "मैं यहाँ आपकी सुनने के लिए हूँ और आपको अपनी दिल की बात करने में मदद करना चाहता हूँ। तो कृपया मुझसे बात करें।",
+    "आप मुझसे बिना निर्णय का डर के बिना बात कर सकते हैं।"
+  ]
+},
+{
+  "tag": "underH",
+  "patterns": [
+    "तुम मुझे समझते नहीं हो।",
+    "तुम बस कुछ रोबोट हो। तुम्हें कैसे पता चलेगा?",
+    "तुम मुझे कैसे समझ सकते हो?",
+    "तुम निष्क्रिय हो",
+    "तुम मेरी मदद नहीं कर सकते",
+    "कोई मुझे समझता नहीं है।"
+  ],
+  "responses": [
+    "अभी लगता है कि मैं बहुत अच्छी मदद नहीं कर रहा हूँ।",
+    "इसे सुनकर दुख हुआ। मैं सहायता करने के लिए अपनी सर्वोत्तम कोशिश कर रहा हूँ",
+    "मैं तुम्हें मदद करने की कोशिश कर रहा हूं। तो कृपया मुझसे बात करें"
+  ]
+},
+{
+  "tag": "PlaceH",
+  "patterns": [
+    "तुम कहाँ हो?",
+    "तुम कहाँ रहते हो?",
+    "तुम्हारा स्थान क्या है?"
+  ],
+  "responses": [
+    "अरे मैं तो तुम्हारे कंप्यूटर में हूँ",
+    "हर जगह",
+    "ब्रह्मांड के किसी कोने में"
+  ]
+},
+{
+  "tag": "helpHH",
+  "patterns": [
+    "हाँ, आप सही हैं। मुझे वाकई अवकाश का हक है।",
+    "हाँ, आप बिल्कुल सही हैं।"
+  ],
+  "responses": [
+    "अगला, मैं आपको ध्यान अभ्यास करने की सलाह दूंगा। ध्यान एक गहरी विश्रांति और एक शांत दिमाग की अवस्था उत्पन्न कर सकता है।"
+  ]
+},
+{
+  "tag": "MeditationH",
+  "patterns": [
+    "हम ऐसा सुनते हैं कि यह मुझे उपयोगी हो सकता है।",
+    "यह उपयोगी लग रहा है।",
+    "ध्यान क्या है?"
+  ],
+  "responses": [
+    "अपनी सांसों पर सभी ध्यान केंद्रित करें। अपनी नाक के माध्यम से सांस लेते समय महसूस और सुनने पर ध्यान केंद्रित करें। गहरी और धीरे सांस लें। जब आपका ध्यान भटकता है, तो आपका ध्यान धीरे से अपनी सांसों पर लौटाएं।"
+  ]
+},
+{
+  "tag": "healthH",
+  "patterns": [
+    "मानसिक स्वास्थ्य क्या है?",
+    "मानसिक स्वास्थ्य की परिभाषा दें"
+  ],
+  "responses": [
+    "मानसिक स्वास्थ्य एक अवस्था है जिसमें व्यक्ति अपने अपने क्षमताओं को समझता है, सामान्य जीवन के तनावों का सामना कर सकता है, उत्पादक और फलदायक रूप से काम कर सकता है, और अपने समुदाय में योगदान कर सकता है।",
+    "मानसिक स्वास्थ्य हमारे भावनात्मक, मानसिक और सामाजिक कल्याण को शाम
+]
+}
+]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    ]}
